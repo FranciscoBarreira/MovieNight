@@ -105,9 +105,70 @@
                     </a>
                 </li>
             </ul>
+           </div>
         </div>
-    </div>
-  </header>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-100 pt-4 px-4 mt-auto yellow-bg">
+        <div class="row gy-4 gx-5">
+    
+        <div class="col-lg-4 col-md-6">
+            <h5 class="h1 footer-logo">MOVIENIGHT.COM</h5>
+            <p class="small mb-0">&copy; Copyrights - 2022 Movie Night</p>
+        </div>
+        
+        <div class="col-lg-3 col-md-6">
+            <h5 class=" mb-3"><strong>Contact Us</strong></h5>
+            <div class="row">
+            <div class="col-4 col-md-6">
+                <p>Address:</p>
+            </div>
+            <div class="col-8 col-md-6 small pl-0">
+                <p class="mb-0">11 Stranger Boulevard</p>
+                <p class="mb-0">Hawkings, IN</p>
+                
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-4 col-md-6">
+                <p>Phone:</p>
+            </div>
+            <div class="col-8 col-md-6 small pl-0 contact-text">
+                <a href="tel:+1-202-555-0183">+1-202-555-0183</a>
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-4 col-md-6">
+                <p>Email:</p>
+            </div>
+            <div class="col-8 col-md-6 pl-0 contact-text">
+                <a href="mailto:MovieNight@gmail.com">MovieNight@gmail.com</a>
+            </div>
+            </div>
+            <p>
+            <a href="https://www.facebook.com/" class="socials" target="_blank"
+                rel="noopener" aria-label="Link to Facebook">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="socials" target="_blank" rel="noopener" aria-label="Link to Instagram">
+                <i class="fab fa-instagram-square"></i>
+            </a>
+            <a href="https://www.twitter.com/" class="socials" target="_blank" rel="noopener" aria-label="Link to Twitter">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            </p>
+        </div>
+        <!-- Newsletter -->
+        <div class="col-lg-4 col-md-6">
+            <h5 class=" mb-3"><strong>Newsletter</strong></h5>
+            <p class="small mb-0">Sign up to our weekly newsletter to keep up to date with all our latest
+            products and offers!</p>
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
@@ -115,8 +176,7 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    {% endblock %}
+   
 
     {% block postloadjs %}
     {% endblock %}
