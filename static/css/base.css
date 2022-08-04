@@ -53,7 +53,10 @@ body {
 }
 
 
-
+.logo {
+    font-family: 'Cinzel', serif;
+    
+}
 .logo-font {
     text-transform: uppercase;
 }
