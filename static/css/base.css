@@ -16,6 +16,12 @@ body {
 
 }
 
+.container-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .yellow-bg {
     
@@ -25,6 +31,10 @@ body {
 .text-white {
     color: #ffffff !important;
     font-weight: bold;
+}
+
+.text-margin {
+    margin-top: 250px;
 }
 
 /* from Bulma */
@@ -67,7 +77,7 @@ body {
 }
 
 .contact-text {
-    color:#ffffff!important;
+    color:#212529!important;
     
 }
 
