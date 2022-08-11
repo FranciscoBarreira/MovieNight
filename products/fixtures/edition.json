@@ -1,0 +1,25 @@
+[{
+    "pk": 1,
+    "model": "products.type",
+    "fields": {
+        "movie_type": "dvd",
+        "movie_friendly_type": "DVD"
+    }
+},
+{
+    "pk": 2,
+    "model": "products.type",
+    "fields": {
+        "movie_type": "bluray",
+        "movie_friendly_type": "Blu-Ray"
+    }
+},
+{
+    "pk": 3,
+    "model": "products.type",
+    "fields": {
+        "movie_type": "4k",
+        "movie_friendly_type": "4K"
+    }
+}
+]

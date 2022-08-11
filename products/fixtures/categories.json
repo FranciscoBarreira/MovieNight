@@ -1,0 +1,25 @@
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "movie_category": "movie",
+        "movie_friendly_category": "Movie"
+    }
+},
+{
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "movie_category": "tv_series",
+        "movie_friendly_category": "TV Series"
+    }
+},
+{
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "movie_category": "documentary",
+        "movie_friendly_category": "Documentary"
+    }
+}
+]

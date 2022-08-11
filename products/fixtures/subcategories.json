@@ -1,0 +1,117 @@
+[{
+    "pk": 1,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "action",
+        "movie_friendly_sub_category": "Action"
+    }
+},
+
+{
+    "pk": 2,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "Comedy",
+        "movie_friendly_sub_category": "Comedy"
+    }
+},
+
+{
+    "pk": 3,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "animation",
+        "movie_friendly_sub_category": "Animation"
+    }
+},
+
+{
+    "pk": 4,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "drama",
+        "movie_friendly_sub_category": "Drama"
+    }
+},
+
+{
+    "pk": 5,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "horror",
+        "movie_friendly_sub_category": "Horror"
+    }
+},
+
+{
+    "pk": 6,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "musical",
+        "movie_friendly_sub_category": "Musical"
+    }
+},
+
+{
+    "pk": 7,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "romance",
+        "movie_friendly_sub_category": "Romance"
+    }
+},
+
+{
+    "pk": 8,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "sci-fi",
+        "movie_friendly_sub_category": "Sci-Fi"
+    }
+},
+
+{
+    "pk": 9,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "thriller",
+        "movie_friendly_sub_category": "Thriller"
+    }
+},
+
+{
+    "pk": 10,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "war",
+        "movie_friendly_sub_category": "War"
+    }
+},
+
+{
+    "pk": 11,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "western",
+        "movie_friendly_sub_category": "Western"
+    }
+},
+
+{
+    "pk": 12,
+    "model": "products.sub_category",
+    "fields": {
+        "movie_sub_category": "sport",
+        "movie_friendly_sub_category": "Sport"
+    }
+},
+
+{
+    "pk": 13,
+    "model": "books.sub_category",
+    "fields": {
+        "book_sub_category": "adventure",
+        "book_friendly_sub_category": "Adventure"
+    }
+}
+]
