@@ -108,10 +108,10 @@
 
 {
     "pk": 13,
-    "model": "books.sub_category",
+    "model": "products.sub_category",
     "fields": {
-        "book_sub_category": "adventure",
-        "book_friendly_sub_category": "Adventure"
+        "movie_sub_category": "adventure",
+        "movie_friendly_sub_category": "Adventure"
     }
 }
 ]

@@ -1,25 +1,25 @@
 [{
     "pk": 1,
-    "model": "products.type",
+    "model": "products.edition",
     "fields": {
-        "movie_type": "dvd",
-        "movie_friendly_type": "DVD"
+        "movie_edition": "dvd",
+        "movie_friendly_edition": "DVD"
     }
 },
 {
     "pk": 2,
-    "model": "products.type",
+    "model": "products.edition",
     "fields": {
-        "movie_type": "bluray",
-        "movie_friendly_type": "Blu-Ray"
+        "movie_edition": "bluray",
+        "movie_friendly_edition": "Blu-Ray"
     }
 },
 {
     "pk": 3,
-    "model": "products.type",
+    "model": "products.edition",
     "fields": {
-        "movie_type": "4k",
-        "movie_friendly_type": "4K"
+        "movie_edition": "4k",
+        "movie_friendly_edition": "4K"
     }
 }
 ]
