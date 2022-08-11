@@ -110,6 +110,15 @@
     "pk": 13,
     "model": "products.sub_category",
     "fields": {
+        "movie_sub_category": "documentary",
+        "movie_friendly_sub_category": "Documentary"
+    }
+},
+
+{
+    "pk": 14,
+    "model": "products.sub_category",
+    "fields": {
         "movie_sub_category": "adventure",
         "movie_friendly_sub_category": "Adventure"
     }
