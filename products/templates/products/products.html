@@ -13,17 +13,17 @@
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-2"></div>
-            <div class="row">
+            <div class="row image-margin">
                 {% for product in products %}
                     <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                         <div class="card h-100 border-0">
                             {% if product.cover %}
                             <a href="">
-                                <img class="card-img-top img-fluid" src="{{ product.cover.url }}" alt="{{ product.name }}">
+                                <img class="card-img-top img-fluid" src="{{ product.cover.url }}" alt="{{ product.title }}">
                             </a>
                             {% else %}
                             <a href="">
-                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.title }}">
                             </a>
                             {% endif %}
                             <div class="card-body pb-0">
@@ -36,7 +36,7 @@
                                         {% if product.rating %}
                                             <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                         {% else %}
-                                            <small class="text-muted">No Rating</small>
+                                            <small class="text-muted">Rating Unavailable</small>
                                         {% endif %}
                                     </div>
                                 </div>

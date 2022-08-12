@@ -102,4 +102,4 @@ class Movie(models.Model):
         max_digits=6, decimal_places=2, null=True, blank=True
         )
     cover_url = models.URLField(max_length=1024, null=True, blank=True)
-    cover = models.ImageField(null=True, blank=True)        
+    cover = models.ImageField(null=True, blank=True)
