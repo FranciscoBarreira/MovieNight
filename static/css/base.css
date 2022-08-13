@@ -41,6 +41,9 @@ body {
     margin-top: 150px;
 }
 
+.detail-margin {
+    margin-top: 200px;
+}
 
 /* from Bulma */
 .icon {
