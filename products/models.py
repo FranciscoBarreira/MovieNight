@@ -106,5 +106,4 @@ class Movie(models.Model):
     cover_url = models.URLField(max_length=1024, null=True, blank=True)
     cover = models.ImageField(null=True, blank=True)
 
-    class Meta:
-        ordering = ['-created_on']
+    
