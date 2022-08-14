@@ -28,6 +28,14 @@
                             {% endif %}
                             <div class="card-body pb-0">
                                 <p class="mb-0">{{ product.title }}</p>
+                                {% if movie.products_category %}
+                                <p class="small mt-3 mb-0">
+                                    <a href="{% url 'products' %}?products_category={{ movie.movie_category.movie_category }}"
+                                        class="text-muted">
+                                        {{ movie.movie_category.movie_friendly_category }}
+                                    </a>
+                                </p>
+                                {% endif %}
                             </div>
                             <div class="card-footer bg-white pt-0 border-0 text-left">
                                 <div class="row">
