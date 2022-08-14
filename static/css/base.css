@@ -37,12 +37,22 @@ body {
     margin-top: 250px;
 }
 
-.image-margin {
-    margin-top: 150px;
-}
 
 .detail-margin {
     margin-top: 200px;
+}
+
+.box-margin {
+    margin-top: 150px;
+}
+
+.box-display {
+    display: contents;
+}
+
+.inline-display {
+
+    display: inline;
 }
 
 /* from Bulma */
