@@ -91,7 +91,7 @@ class Movie(models.Model):
     director = models.CharField(max_length=254)
     synopsis = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
-    price_dvd = models.DecimalField(
+    price = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True
         )
     price_bluray = models.DecimalField(
