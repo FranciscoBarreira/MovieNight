@@ -10,6 +10,7 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = "Categories"
+       
 
     movie_category = models.CharField(max_length=254)
     movie_friendly_category = models.CharField(
@@ -89,6 +90,7 @@ class Movie(models.Model):
     title = models.CharField(max_length=254)
     director = models.CharField(max_length=254)
     synopsis = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
     price_dvd = models.DecimalField(
         max_digits=6, decimal_places=2, null=True, blank=True
         )
@@ -103,3 +105,6 @@ class Movie(models.Model):
         )
     cover_url = models.URLField(max_length=1024, null=True, blank=True)
     cover = models.ImageField(null=True, blank=True)
+
+    class Meta:
+        ordering = ['-created_on']

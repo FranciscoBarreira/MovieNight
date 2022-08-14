@@ -14,6 +14,7 @@ class MovieAdmin(admin.ModelAdmin):
         'movie_edition2',
         'movie_edition3',
         'cover',
+        'created_on'
     )
 
     ordering = ('sku',)
