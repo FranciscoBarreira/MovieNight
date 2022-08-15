@@ -63,6 +63,16 @@ body {
     display: inline;
 }
 
+
+
+.update-link{
+    margin-left: 15px;
+}
+
+.remove-item {
+    margin-right: 50px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -110,6 +120,12 @@ body {
 .btt-link {
    
     color: white!important;
+}
+
+
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 .btn-outline-grey {
