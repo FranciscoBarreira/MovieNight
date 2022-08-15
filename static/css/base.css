@@ -42,6 +42,10 @@ body {
     margin-top: 200px;
 }
 
+.bag-margin {
+    margin-top:150px;
+}
+
 .box-margin {
     margin-top: 150px;
 }
@@ -104,6 +108,18 @@ body {
     color: white!important;
 }
 
+.btn-outline-grey {
+    background: white;
+    color: #212529!important; 
+    border: 1px solid #212529;
+}
+
+.btn-quantity{
+    color:white;
+    background: #212529;
+
+}
+
 .overlay {
     height: 100%;
     width:100%;
@@ -112,6 +128,16 @@ body {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+.bag-overlay {
+height: 100%;
+width: 100%;
+top: 0;
+left:0;
+position: fixed;
+background: white;
+z-index: -1;
 }
 
 .socials {
