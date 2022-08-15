@@ -37,6 +37,10 @@ body {
     margin-top: 250px;
 }
 
+.text-orange {
+   color: rgb(225, 133, 34);
+    
+}
 
 .detail-margin {
     margin-top: 200px;
