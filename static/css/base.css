@@ -48,7 +48,7 @@ body {
     background-color: rgb(225, 133, 34);
 }
 
-.detail-margin {
+.detail-margin, .checkout-margin {
     margin-top: 200px;
 }
 
