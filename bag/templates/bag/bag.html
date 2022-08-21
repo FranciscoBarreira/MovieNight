@@ -5,8 +5,8 @@
 {% block content %}
 <div class="container bag-margin">
     <div class="row">
-        <div class="col-7 col-md-6 text-center contact-center">
-            <div class="my-5">
+        <div class="col-12 text-center contact-center">
+            <div class="btn-shopping">
                 <hr>
                 <h2 class="logo-font mb-4">Shopping Bag</h2>
                 <hr>
@@ -94,7 +94,7 @@
                 </div>
             {% else %}
                 <p class="lead mb-5">Your bag is empty.</p>
-                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                <a href="{% url 'products' %}" class="btn btn-outline-black btn-quantity rounded-0 btn-lg">
                     <span class="icon">
                         <i class="fas fa-chevron-left"></i>
                     </span>

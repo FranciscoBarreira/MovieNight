@@ -24,7 +24,6 @@ body {
 
 
 .yellow-bg {
-    
     background-color: rgb(225, 133, 34);
 }
 
@@ -37,6 +36,10 @@ body {
 
 .text-margin {
     margin-top: 250px;
+}
+
+.text-grey {
+    color: #212529;
 }
 
 .text-orange {
@@ -53,7 +56,7 @@ body {
 }
 
 .bag-margin {
-    margin-top:150px;
+    margin-top:200px;
 }
 
 .box-margin {
@@ -68,8 +71,6 @@ body {
 
     display: inline;
 }
-
-
 
 .update-link{
     margin-left: 15px;
@@ -154,7 +155,7 @@ body {
     border: 1px solid #212529;
 }
 
-.btn-quantity{
+.btn-quantity,.btn-shopping{
     color:white;
     background: #212529;
 
