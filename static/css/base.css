@@ -63,6 +63,14 @@ body {
     margin-top: 150px;
 }
 
+.login-margin {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
 .box-display {
     display: contents;
 }
