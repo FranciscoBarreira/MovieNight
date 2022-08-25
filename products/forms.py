@@ -1,4 +1,5 @@
 from django import forms
+from .widgets import CustomClearableFileInput
 from .models import Movie, Category
 
 
@@ -7,6 +8,10 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Movie
         fields = '__all__'
+
+    cover = forms.ImageField(label='Cover', required=False, widget=CustomClearableFileInput)
+
+
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
