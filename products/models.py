@@ -56,6 +56,10 @@ class Edition(models.Model):
         return self.movie_friendly_edition        
 
 class Movie(models.Model):
+
+    class Meta:
+        ordering = ['-created_on']
+
     movie_category = models.ForeignKey(
         'Category',
         null=True,

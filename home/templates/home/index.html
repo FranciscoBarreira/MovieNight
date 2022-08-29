@@ -13,4 +13,20 @@
         </div>
     </div>
 </div>
+
+<div class="row d-none d-lg-flex ">
+    <div class="row">
+        <div class="col mt-5">
+            <h2 class="text-center display-4 ml-3">Latest Arrivals</h2>
+            <hr>
+        </div>
+    </div>
+    {% for product in products|slice:":8" %}
+    <div class="col-3 mt-4 top-products">
+        {% include 'products/includes/product-card.html' %}
+    </div>
+    {% endfor %}
+</div>
+
+
 {% endblock %}
