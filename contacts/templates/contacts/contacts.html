@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_title %}- Contacts{% endblock %}
+
+{% block page_header %}
+<div class="container-flex">
+    <div class="row">
+        <div class="col-8 offset-2 mt-3">
+            <h2 class="text-center">About Us</h2>
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container contacts-margin">
+    <div class="row">
+        <div class="col-12 text-center btn-shopping contacts-margin-bottom ">
+            <hr>
+            <h2 class="logo-font mb-4">Contact Us</h2>
+            <hr>
+        </div>
+    </div>
+    <div class="row text-center contacts-margin-bottom">
+        <p><strong>If you are experiencing any difficulties or you have a query about any 
+           of of our products, please contacts us. </strong></p>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <p>Address:</p>
+        </div>
+        <div class="col-8 col-md-6 small pl-0">
+            <p class="mb-0">11 Stranger Boulevard</p>
+            <p class="mb-0">Hawkings, IN</p>
+            
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-4">
+            <p>Phone:</p>
+        </div>
+        <div class="col-8 col-md-6 small pl-0">
+            <a class= "contact-text" href="tel:+1-202-555-0183">+1-202-555-0183</a>
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-4">
+            <p>Email:</p>
+        </div>
+        <div class="col-8 col-md-6 pl-0">
+            <a class="contact-text" href="mailto:MovieNight@gmail.com">MovieNight@gmail.com</a>
+        </div>
+        </div>
+</div>
+{% endblock %}
