@@ -19,13 +19,13 @@
             latest arrivals, staff picks and upcoming movies, TV shows and documentaries. 
         </p>
         <hr>
-        <form method="POST" class="news-form">
+        <form method="POST" class="form-margin">
             {% csrf_token %}
             <table>
                 {{ form }}
             </table>
             <div class="py-3">
-                <button class="btn btn-newsletter" type="submit">Subscribe</button>
+                <button class="btn btn-newsletter form-margin" type="submit">Subscribe</button>
             </div>
         </form>
     </div>
