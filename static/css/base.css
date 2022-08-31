@@ -59,6 +59,13 @@ body {
     margin-top: 250px;
 }
 
+.newsletter-margin {
+    margin-top: 200px;
+    margin-bottom: 50px;
+
+}
+
+
 .checkout-margin-bottom{
     margin-bottom: 100px;
 }
@@ -194,7 +201,7 @@ body {
     border: 1px solid #212529;
 }
 
-.btn-quantity,.btn-shopping, .btn-suggestion{
+.btn-quantity,.btn-shopping, .btn-suggestion, .btn-newsletter{
     color:white;
     background: #212529;
 
@@ -237,7 +244,9 @@ z-index: -1;
     color: white;
 }
 
-
+.btn-newsletter:hover,
+.btn-newsletter:active,
+.btn-newsletter:focus,
 .btn-suggestion:hover,
 .btn-suggestion:active,
 .btn-suggestion:focus,

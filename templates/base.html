@@ -178,6 +178,18 @@
             <h5 class=" mb-3"><strong>Newsletter</strong></h5>
             <p class="small mb-0">Sign up to our weekly newsletter to keep up to date with all our latest
             products and offers!</p>
+            <form method="POST" class="news-form">
+                {% csrf_token %}
+                <table>
+                    {{ form }}
+                </table>
+                <div class="py-3">
+                    <button class="btn btt" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div> 
+
+
     {% if messages %}
     <div class="message-container">
         {% for message in messages %}
