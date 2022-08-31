@@ -180,17 +180,9 @@
         <!-- Newsletter -->
         <div class="col-lg-4 col-md-6">
             <h5 class=" mb-3"><strong>Newsletter</strong></h5>
-            <p class="small mb-0">Sign up to our weekly newsletter to keep up to date with all our latest
-            products and offers!</p>
-            <form method="POST" class="news-form">
-                {% csrf_token %}
-                <table>
-                    {{ form }}
-                </table>
-                <div class="py-3">
-                    <button class="btn btt" type="submit">Subscribe</button>
-                </div>
-            </form>
+            <p class="small mb-0">Sign up to MovieNight's weekly newsletter and get to know all the
+                latest arrivals, staff picks and upcoming movies, TV shows and documentaries. 
+                Sign up <a class="newsletter-link" href="{% url 'newsletter' %}">here</a>.</p>
         </div> 
 
 

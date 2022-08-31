@@ -238,6 +238,11 @@ z-index: -1;
     margin-right: 3.75rem;
 }
 
+.newsletter-link {
+    text-decoration: underline;
+    color: white;
+}
+
 .contact-text {
     color:#212529!important;
     
