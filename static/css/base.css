@@ -194,7 +194,7 @@ body {
     border: 1px solid #212529;
 }
 
-.btn-quantity,.btn-shopping{
+.btn-quantity,.btn-shopping, .btn-suggestion{
     color:white;
     background: #212529;
 
@@ -237,12 +237,16 @@ z-index: -1;
     color: white;
 }
 
+
+.btn-suggestion:hover,
+.btn-suggestion:active,
+.btn-suggestion:focus,
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
-.btn-black:focus,
+.btn-black:focus, 
 .btn-quantity:hover,
 .btn-quantity:active,
 .btn-quantity:focus  {

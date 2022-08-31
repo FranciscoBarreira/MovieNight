@@ -1,0 +1,9 @@
+
+
+{{ cust_name }} sent the following message:
+
+'{{ inbox_message }}'
+
+Please respond as soon as possible to this message at {{ cust_email }}.
+
+Thanks

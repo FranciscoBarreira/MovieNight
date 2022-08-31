@@ -1,0 +1,9 @@
+Hi, {{ cust_name }}!
+
+Thanks for sharing your message with us. We will respond to you as soon as possible. 
+
+Happy Screenings!
+
+
+
+
