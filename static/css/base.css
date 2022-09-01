@@ -205,7 +205,7 @@ body {
     border: 1px solid #212529;
 }
 
-.btn-quantity,.btn-shopping, .btn-suggestion, .btn-newsletter{
+.btn-quantity,.btn-shopping, .btn-suggestion, .btn-newsletter, .btn-category{
     color:white;
     background: #212529;
 
@@ -253,6 +253,10 @@ z-index: -1;
     color: white;
 }
 
+
+.btn-category:hover,
+.btn-category:active,
+.btn-category:focus,
 .btn-newsletter:hover,
 .btn-newsletter:active,
 .btn-newsletter:focus,
