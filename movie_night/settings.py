@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -123,12 +124,17 @@ WSGI_APPLICATION = 'movie_night.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#    }
+# }
+
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+    'default': dj_database_url.parse('postgres://vzjyojzlpsheyx:df06bbd14e1bcfd0235ab5658bdc8d4d262c7149905ea3942241e87e7bbe93fc@ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/deaghgpff1p4dg')
+} 
 
 
 # Password validation
