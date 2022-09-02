@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-4l)anc5u1%^^uu)z87)3-l75w)!36%8lbq$*iu!5#*3k%q#&mp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['movienight2022.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -124,17 +124,17 @@ WSGI_APPLICATION = 'movie_night.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.sqlite3',
-#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#    }
-# }
-
-
-DATABASES = {
-    'default': dj_database_url.parse('postgres://vzjyojzlpsheyx:df06bbd14e1bcfd0235ab5658bdc8d4d262c7149905ea3942241e87e7bbe93fc@ec2-3-248-121-12.eu-west-1.compute.amazonaws.com:5432/deaghgpff1p4dg')
-} 
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
