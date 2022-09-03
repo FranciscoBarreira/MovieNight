@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Disallow: /admin/
+Disallow: /profiles/
+Sitemap: https://movienight2022.herokuapp.com/sitemap.xml
