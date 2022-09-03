@@ -108,7 +108,7 @@ body {
     margin-bottom: 100px;
 }
 
-.email-margin{
+.email-margin, .password-margin{
     margin-top: 250px;
     
 }
