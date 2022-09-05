@@ -91,8 +91,13 @@ body {
     margin-top:200px;
 }
 
-.profile-margin, .error-margin {
+.profile-margin{
     margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.error-margin{
+    margin-top: 100px;
     margin-bottom: 100px;
 }
 
@@ -164,7 +169,7 @@ body {
 }
 
 .shop-now-button {
-    background: black;
+    background: #212529;
     color: white;
     min-width: 260px;
     border-radius: 50%;
