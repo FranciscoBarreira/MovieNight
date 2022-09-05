@@ -91,7 +91,7 @@ body {
     margin-top:200px;
 }
 
-.profile-margin {
+.profile-margin, .error-margin {
     margin-top: 200px;
     margin-bottom: 100px;
 }
