@@ -83,28 +83,52 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 ### User Stories
  <a name="user-stories"></a>
 
-In order to better organize the workflow using agile tools, a series of user stories were created in the project repository. Those can be seen below:
- 
-![user stories image 1](/static/media/images/user_stories1.png "user stories")
-![user stories image 2](/static/media/images/user_stories2.png "user stories2")
-![user stories image 3](/static/media/images/user_stories3.png "user stories3")
-![user stories image 4](/static/media/images/user_stories4.png "user stories4")
+In order to better organize the workflow using agile tools, a series of epics were created, each containing multiple user stories. The repositoty including the labels(epic+must have/nice to have) can be found [here.](https://github.com/FranciscoBarreira/MovieNight/projects/1)
 
-The users stories read as follows:
+Epic - Acoount
 
-- Search Bar : As a user I can search for different topics so that I get the exact content I want.
-- Create Post : As an admin I can create a new post so that I can add content to the website. 
-- Login: As a user I can register or login so that I have access to all the site's benefits.
-- Upvotes/Downvotes: As a user I can upvote and downvote comments so that I can express my opinion towards the content of the post.
-- Number of Upvotes/Downvotes: As a user I can see the number of upvotes or downvotes so that better content becomes more easily distinguishable.
-- Approve Comments: As a site admin I can approve or reject comments so that I can assure no distasteful comments are public.
-- Draft Posts: As an admin I can draft posts so that I can write them ahead of time.
-- Post List: As a user I can view a list of posts so that choose the content I want to interact with.
-- Delete Post: As a site admin I can delete posts so that I can assure certain types of content are not present in the site.
-- Comment Section: As an authenticated user I can comment on a post so that I can give my opinion on the topic.
-- Search Filter: As a user I can filter the posts so that I can look for specific content.
-- Edit Post: As an admin I can edit a post I created so that I can correct possible mistakes.
+- Login : As a user I can login so that I can access my profile.
+- Sign Up : As a user I can sign up for a new account so that I can save my information
+- Edit Profile: As a user I can change the information on my profile so that it always stays updated.
+- Confirmation Email: As a user I can get a confirmation email when I sign up for a new account so I can verify it.
+- Set up a new password: As a user I can set up a new password so I can access my account if i forget it.
+- Create, edit, delete products in admin: As an admin, I can create, edit and delete products so I can manage the site.
 
+Epic - Communication
+
+- Newsletter signup:As a user I can opt in to receive a newsletter from Movie Night so I can view all the latest offers.
+- Request a movie: As a user I can request a movie so that it may become available in the store.
+- Social Media Links: As a user, I can see all the links to the social media pages so I can follow Movie Night on those platforms.
+- Contacts: As a user I can see the contacts both on the contact page and on the footer so I can easily contact Movie Night.
+- About Us Section: As a user, I can click on the about us section to learn about movie night, contact them and sign up for the newsletter.
+- Suggestions: As a user, I can suggest movies, tv shows and documentaries to Movie Night so I can try to get the products that are unavailable at the moment.
+
+Epic - Shopping
+
+- See Products in Cart : As a user I can see the products so that I know what is currently in the Shopping cart.
+- See Shopping Cart Total Value : As a user I can see the total value of the shopping cart so that I know exactly how much I would be spending.
+- Secure Payment: As a user I want to be able to proceed to secure checkout so that I feel safe about my personal data.
+- Delete Products From Cart: As a user I can delete products from my shopping cart so that the current cart only includes the products I want.
+- Order Information: As a buyer, I can access my order information so that I can check if all the details are correct.
+- Order Information History: As a user I can access my order information history, so that I have proof of my previous purchases
+- Save Profile Details: As an authenticated user, I can save my personal details, so I can have them pre-filled when I make a new order.
+- Bag Quantity: As a user I can change the quantities in the bag so that I can adjust it.
+- Order Confirmation Details: As a user, I can receive a confirmation email containing order information so I can use it as a proof of transaction.
+
+Epic - Site Navigation
+
+- Product Detail : As a user I can see the product detail page so that I can see all available information for that product.
+- Ratings : As an authenthicated user, I can see a product's rating so that I can make an informed choice.
+- Product List: As a user I can view a list of products so that I can browse through them,
+- Filter Products: As a user, I can filter products by price, rating and category so that discovery is made easier.
+- Site Navigation: As a user I can easily navigate the website so that I can always find the products or pages I want.
+- Search Bar: As a user I can search for a specific term so that I can find exactly what i am looking for: As an admin, I can create, edit and delete products so I can manage the site.
+
+The Following user stories were set as 'to be added later' as they did not make the final project:
+
+- Rate Products: As a user I can rate products so that i can leave a review.
+- Favourite Products: As an authenticated user, I can add a product to my list so that i can have easy access to my favourite products.
+- Movie Editions: As a user, I can select an edition (dvd, bluray or 4k) so I can decide which to buy
 
 ## Design
  <a name="design"></a>
@@ -117,8 +141,8 @@ The users stories read as follows:
 
 All the images used in the blog were taken from other websites, including:
 
-- Google images for all the images in the posts, the Metagaming page header and placeholder image
-- Twitch.tv for the images in the recommended streamer widget
+- Unsplash.com
+- IMDB (movie covers)
 
 ### Colour Scheme 
 <a name="colour-scheme"></a>
