@@ -147,17 +147,19 @@ All the images used in the blog were taken from other websites, including:
 ### Colour Scheme 
 <a name="colour-scheme"></a>
 
-The colour scheme chosen for the blog were:
+The colour scheme chosen for the site can be seen below:
 
-- #fff white for text, as it it is a very standard, easy to read colour
-- #212429 grey in the nav-bar, read me more buttons
-- #990099 purple in the widgets, username of the user who posted the article and username in comments when the user is logged in. 
-- #212529 grey for text (slightly different than nav grey as it reads better).
+![colour palette image image](/media/palette.png "colour palette")
+
+
+
+- Additionally , Black is used for text as it improves readibility over the dark grey.
+
 
 ### Fonts 
 <a name="fonts"></a>
 
-Tittillium Web is used for the headings and widgets due to its visual appeal. The rest of the text is in Roboto, a font that improves readability.
+Cinzel is used for the logo as it stands out from regular fonts and gives a nice touch to the website. The rest of the text is in Roboto, a font that improves readability.
 
 ## Technologies Used
 <a name="technologies-used"></a>
