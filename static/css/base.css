@@ -83,6 +83,10 @@ body {
     margin-top: 150px;
 }
 
+.account-margin {
+    margin-top: 50px;
+}
+
 .login-margin {
     margin-top: 100px;
 }   
@@ -476,6 +480,10 @@ z-index: -1;
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;
+    }
+
+    .logo-size {
+        font-size: 20px;
     }
 
     #delivery-banner h4 {
