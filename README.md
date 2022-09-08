@@ -328,7 +328,9 @@ This blog contains 3 authentication related pages: login, sign up and sign out. 
 ### Validator Testing
 <a name="validator-testing"></a>
 
-HTML- No errors were shown when put through the [HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Ffranciscobarreira.github.io%2Fjavascript-project%2F)
+HTML- 
+
+[Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2F)
 
 CSS- No errors were shown when put through the [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffranciscobarreira.github.io%2Fjavascript-project%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
 
