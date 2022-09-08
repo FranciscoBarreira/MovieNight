@@ -76,7 +76,7 @@
           <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                 <li class="list-inline-item dropdown">
-                    <a class="text-grey nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="text-grey nav-link" href="#" class="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
                             <div><i class="fas fa-user fa-lg"></i></div>
                             <p class="my-0">My Account</p>
@@ -120,6 +120,7 @@
                 {% include 'includes/mobile-top-header.html' %}
                 {% include 'includes/main-nav.html' %}
             </nav>
+        </div>    
     </header>
 
     <main>
@@ -129,7 +130,7 @@
 
     <!-- Footer -->
     <footer class="w-100 pt-4 px-4 mt-auto yellow-bg">
-        <div class="row gy-4 gx-5">
+        
     
         <div class="col-lg-4 col-md-6">
             <h5 class="h1 footer-logo">MOVIENIGHT.COM</h5>
@@ -184,7 +185,7 @@
                 latest arrivals, staff picks and upcoming movies, TV shows and documentaries. 
                 Sign up <a class="newsletter-link" href="{% url 'newsletter' %}">here</a>.</p>
         </div> 
-
+    </footer>
 
     {% if messages %}
     <div class="message-container">
