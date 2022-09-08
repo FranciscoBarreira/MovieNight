@@ -354,6 +354,10 @@ HTML-
 
 [Contacts](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fcontacts%2F)
 
+[Newsletter](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fnewsletter%2F)
+
+[Suggestion](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fsuggestion%2F)
+
 
 
 
