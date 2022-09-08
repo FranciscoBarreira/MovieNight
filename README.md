@@ -352,6 +352,8 @@ HTML-
 
 [About Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fabout%2F)
 
+[Contacts](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fcontacts%2F)
+
 
 
 
