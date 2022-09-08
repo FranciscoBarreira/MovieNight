@@ -340,6 +340,24 @@ HTML-
 
 [Checkout Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fproducts%2F)
 
+[Order Confirmation Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fcheckout%2Fcheckout_success%2FB211F86EB677449A966981E1DA2036E3)
+
+[Profile Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
+
+[Logout Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
+
+[Signup Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Fsignup%2F)
+
+[Login Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F)
+
+[About Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fabout%2F)
+
+
+
+
+
+
+
 
 CSS- No errors were shown when put through the [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffranciscobarreira.github.io%2Fjavascript-project%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
 
