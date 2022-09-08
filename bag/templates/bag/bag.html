@@ -89,6 +89,8 @@
                                 </td>
                                 <td class="py-3 w-25">
                                     {% include "bag/quantity-form.html" %}
+                                    <a class="update-link text-success"><strong>Update</strong></a>
+                                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}"><strong>Remove</strong></a>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
