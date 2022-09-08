@@ -458,7 +458,7 @@ z-index: -1;
         padding-top: 164px;
     }
 
-   
+}   
 
     /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
@@ -514,4 +514,4 @@ z-index: -1;
    .small-icon {
      font-size: small;
    }
-}
+} 

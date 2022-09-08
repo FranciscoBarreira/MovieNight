@@ -328,7 +328,7 @@ This blog contains 3 authentication related pages: login, sign up and sign out. 
 ### Validator Testing
 <a name="validator-testing"></a>
 
-HTML- 
+HTML
 
 [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2F)
 
@@ -344,6 +344,8 @@ HTML-
 
 [Profile Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
 
+[Product Management](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fadd%2F)
+
 [Logout Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
 
 [Signup Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Fsignup%2F)
@@ -357,6 +359,23 @@ HTML-
 [Newsletter](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fnewsletter%2F)
 
 [Suggestion](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fsuggestion%2F)
+
+CSS 
+
+Both CSS files had no errors on it when I ran them [through](https://jigsaw.w3.org/css-validator/)
+
+
+
+Javascript 
+
+All Javascript was put [through](https://jshint.com/) and no errors were found.
+
+
+
+
+Python
+
+Every python file was passed [through](http://pep8online.com/) and came back with no errors.
 
 
 

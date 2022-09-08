@@ -10,12 +10,12 @@ from profiles.models import UserProfile
 import json
 import time
 
+
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
 
     def __init__(self, request):
         self.request = request
-
 
     def _send_confirmation_email(self, order):
         """Send the user a confirmation email"""
@@ -26,13 +26,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )            
+        )
 
     def handle_event(self, event):
         """
@@ -74,7 +74,6 @@ class StripeWH_Handler:
                 profile.default_street_address2 = shipping_details.address.line2
                 profile.default_county = shipping_details.address.state
                 profile.save()
-        
 
         order_exists = False
         attempt = 1
@@ -121,6 +120,7 @@ class StripeWH_Handler:
                 )
                 for item_id, item_data in json.loads(bag).items():
                     product = Movie.objects.get(id=item_id)
+
                     def isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
@@ -128,7 +128,7 @@ class StripeWH_Handler:
                             quantity=item_data,
                         )
                         order_line_item.save()
-                
+
             except Exception as e:
                 if order:
                     order.delete()

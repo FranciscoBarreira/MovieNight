@@ -3,6 +3,7 @@ from products.models import Movie
 
 # Create your views here.
 
+
 def index(request):
     """ Returns the index page """
 
@@ -15,6 +16,6 @@ def index(request):
     context = {
         'top_products': top_products,
         'latest_products': latest_products,
-}    
+    }
 
     return render(request, 'home/index.html', context)

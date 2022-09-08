@@ -10,7 +10,7 @@ from django.contrib import messages
 
 def view_suggestion_page(request):
     """ A view to return the make a suggestion page """
-    
+
     # Sends mail from form
     if request.method == 'POST':
         cust_name = request.POST.get('name')
@@ -56,6 +56,5 @@ def view_suggestion_page(request):
             f'Message successfully sent. \
                 A confirmation email will be sent to {cust_email}.'
             )
-
 
     return render(request, 'suggestion/suggestion.html')

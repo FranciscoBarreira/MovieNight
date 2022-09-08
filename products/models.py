@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Category(models.Model):
     """
     Class to correct the "categorys"
@@ -10,7 +11,6 @@ class Category(models.Model):
 
     class Meta:
         verbose_name_plural = "Categories"
-       
 
     movie_category = models.CharField(max_length=254)
     movie_friendly_category = models.CharField(
@@ -22,6 +22,7 @@ class Category(models.Model):
 
     def get_friendly_name(self):
         return self.movie_friendly_category
+
 
 class Sub_Category(models.Model):
     """
@@ -43,6 +44,7 @@ class Sub_Category(models.Model):
     def get_friendly_name(self):
         return self.movie_friendly_sub_category
 
+
 class Edition(models.Model):
     movie_edition = models.CharField(max_length=254)
     movie_friendly_edition = models.CharField(
@@ -53,7 +55,8 @@ class Edition(models.Model):
         return self.movie_edition
 
     def get_friendly_name(self):
-        return self.movie_friendly_edition        
+        return self.movie_friendly_edition
+
 
 class Movie(models.Model):
 
@@ -109,5 +112,3 @@ class Movie(models.Model):
         )
     cover_url = models.URLField(max_length=1024, null=True, blank=True)
     cover = models.ImageField(null=True, blank=True)
-
-    

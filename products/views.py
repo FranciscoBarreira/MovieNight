@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import (render, redirect, reverse,
+                              get_object_or_404)
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -8,6 +9,7 @@ from django.db.models.functions import Lower
 from .forms import ProductForm
 
 # Create your views here.
+
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -33,25 +35,24 @@ def all_products(request):
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
-        
 
         if 'movie_category' in request.GET:
             categories = request.GET['movie_category'].split(',')
-            products = products.filter(movie_category__movie_category__in=categories)
+            products = (products.filter
+                        (movie_category__movie_category__in=categories))
             categories = Category.objects.filter(movie_category__in=categories)
 
-    
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
                 messages.error(request, "Please enter a search term")
                 return redirect(reverse('products'))
-            
+
             queries = Q(title__icontains=query) | Q(synopsis__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
-    
+
     context = {
         'products': products,
         'search_term': query,
@@ -60,6 +61,7 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
+
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
@@ -72,11 +74,13 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This page is only acessible for store managers.')
+        messages.error(request,
+                       'This page is only acessible for store managers.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -86,10 +90,11 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request,
+                           'Form invalid.Failed to add product.')
     else:
         form = ProductForm()
-    
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -97,11 +102,13 @@ def add_product(request):
 
     return render(request, template, context)
 
+
 @login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This page is only acessible for store managers.')
+        messages.error(request,
+                       'This page is only acessible for store managers.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Movie, pk=product_id)
@@ -112,7 +119,7 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Form invalid.Failed to update product.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.title}')
@@ -126,11 +133,13 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This page is only acessible for store managers.')
+        messages.error(request,
+                       'This page is only acessible for store managers.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Movie, pk=product_id)

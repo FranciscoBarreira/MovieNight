@@ -1,14 +1,17 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (render, redirect, reverse,
+                              HttpResponse, get_object_or_404)
 from django.contrib import messages
 
 from products.models import Movie
 
 # Create your views here.
 
+
 def view_bag(request):
     """ A view that renders the bag contents page """
 
     return render(request, 'bag/bag.html')
+
 
 def add_to_bag(request, item_id):
     """ Add products to the shopping bag """
@@ -29,6 +32,7 @@ def add_to_bag(request, item_id):
     print(request.session['bag'])
     return redirect(redirect_url)
 
+
 def adjust_bag(request, item_id):
     """ Change products in the shopping bag """
 
@@ -40,12 +44,13 @@ def adjust_bag(request, item_id):
         bag[item_id] = quantity
         messages.success(request, f'Updated {product.title} in your bag')
     else:
-        bag.pop(item_id) 
+        bag.pop(item_id)
         messages.success(request, f'Removed {product.title} from your bag')
 
     request.session['bag'] = bag
     print(request.session['bag'])
-    return redirect(reverse('view_bag'))    
+    return redirect(reverse('view_bag'))
+
 
 def remove_from_bag(request, item_id):
     """ Remove products from the shopping bag """
@@ -54,13 +59,12 @@ def remove_from_bag(request, item_id):
         product = get_object_or_404(Movie, pk=item_id)
         bag = request.session.get('bag', {})
 
-    
-        bag.pop(item_id) 
+        bag.pop(item_id)
         messages.success(request, f'Removed {product.title} from your bag')
 
         request.session['bag'] = bag
         print(request.session['bag'])
         return HttpResponse(status=200)
-    except Exception as e:        
+    except Exception as e:
         messages.success(request, f'Error Removing Item: {product.title}')
-        return HttpResponse(status=500)  
+        return HttpResponse(status=500)

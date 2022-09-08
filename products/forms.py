@@ -9,9 +9,8 @@ class ProductForm(forms.ModelForm):
         model = Movie
         fields = '__all__'
 
-    cover = forms.ImageField(label='Cover', required=False, widget=CustomClearableFileInput)
-
-
+    cover = forms.ImageField(label='Cover', required=False,
+                             widget=CustomClearableFileInput)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
