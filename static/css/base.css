@@ -455,6 +455,8 @@ z-index: -1;
         padding-top: 164px;
     }
 
+   
+
     /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
@@ -502,5 +504,11 @@ z-index: -1;
     }
 
     
+
 }
+
+@media (max-width: 400px) {
+   .small-icon {
+     font-size: small;
+   }
 }
