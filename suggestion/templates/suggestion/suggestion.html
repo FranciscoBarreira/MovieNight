@@ -9,13 +9,14 @@
 {% block content %}
 <div class="container suggestion-margin">
     <div class="row mt-4">
+        <div class="col-12 text-center btn-shopping">
+            <hr>
+            <h2 class="logo-font mb-4 checkout-margin-bottom">Make a Suggestion</h2>
+            <hr>
+        </div>
         <!-- Send a message form  -->
         <div class="col-md-6 pl-3 my-4 mt-md-0">
-            <div class="col-12 text-center btn-shopping">
-                <hr>
-                <h2 class="logo-font mb-4 checkout-margin-bottom">Make a Suggestion</h2>
-                <hr>
-            </div>
+        
             <form action="{% url 'suggestion' %}" method="POST" class="form" name="message_form">
                 {% csrf_token %}
                 <input type="text" class="w-100  form-control" placeholder="Name *" name="name" value="{{ request.user.username }}" required>
