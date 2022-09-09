@@ -8,14 +8,18 @@
 <div class="container newsletter-margin">
     <div class="row">
         <div class="col text-center mt-3">
-            <h3 class="my-sm-2 my-md-3 my-lg-5 text-center font-weight-bold">Sign Up for our Newletter here</h3>
+            <div class="col-12 text-center btn-newsletter">
+                <hr>
+                <h2 class="logo-font mb-4 checkout-margin-bottom">Who Are We?</h2>
+                <hr>
+            </div>
             <form method="POST" class="news-form">
                 {% csrf_token %}
                 <table>
                     {{ form }}
                 </table>
                 <div class="py-3">
-                    <button class="btn btn-newsletter" type="submit">Subscribe</button>
+                    <button class="btn btn-newsletter btn-float" type="submit">Subscribe</button>
                 </div>
             </form>
         </div>

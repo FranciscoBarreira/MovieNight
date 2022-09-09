@@ -219,6 +219,10 @@ body {
     border: 1px solid #212529;
 }
 
+.btn-float {
+    float: left;
+}
+
 .btn-quantity,.btn-shopping, .btn-suggestion, .btn-newsletter, .btn-category{
     color:white;
     background: #212529;
