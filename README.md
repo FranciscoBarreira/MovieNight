@@ -30,11 +30,17 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 [Features](#features)   
 
    - [Home Page](#home-page)
-   - [Carousel](#carousel) 
-   - [Blog Posts](#blog-posts)
-   - [Footer](#footer)
-   - [Post Detail](#post-detail)  
-   - [Authentication](#authentication)
+   - [Products Page](#products-page) 
+   - [Product Detail](#product-detail)
+   - [Bag](#bag)
+   - [Checkout](#checkout)  
+   - [Order Confirmation](#order-confirmation)
+   - [Product Management](#product-management)
+   - [Profile](#profile)
+   - [About Us](#about-us)
+   - [Contacts](#contacts)
+   - [Newsletter](#newsletter)
+   - [Suggestion](#suggestion)
    - [Future Features](#future-features)    
 
 
@@ -204,61 +210,117 @@ Cinzel is used for the logo as it stands out from regular fonts and gives a nice
 ### Home Page
 <a name="home-page"></a>
   
-At the top of the page lies there is a navbar with a short welcome message and the Home/Signup/Login options. If the user is already logged in, the options change to Home/Sign out. Below, there is an background image with the Metagaming name and logo. 
+Home page contains a fully working nav, including search bar, profile and shopping bag. Profile can also include product management if the user is an admin. The main attraction is the cinema-related image, which includes a shop now button. Below that, there are two sections containing the highest rated and latest arrivals. The footer consists on 3 parts: the logo, contacts and a call for a newsletter signup. 
 
-![logo/navbar image](/static/media/images/nav.png "logo and navbar")
-
-
-
-### Carousel
-<a name="carousel"></a>
-
-Below the Metagaming image, there is a carousel that contains 3 posts. The first is fixed, displaying a message to sign up. The remaining two are the last posts created in the blog. On the right, there is a search bar so users can search for the content they desire. There are 3 additional side widgets, Upcoming Events, Recommended Games and Recommended Streamers below the search bar.   
-
-![carousel image](/static/media/images/carousel.png "carousel")
-
-### Blog Posts
-<a name="blog-posts"></a>
-
-The blog posts are displayed below the carousel. Each page contains up to 6 posts, that include image, author, category, date, title and excerpt. The users can open the posts either by clicking on the image or on the read more button.
-
-![blog image](/static/media/images/posts.png "blog")
+![home page](/media/homepage1.png "homepage")
+![home page2](/media/homepage2.png "homepage2")
+![home page3](/media/homepage3.png "homepage3")
+![home page4](/media/homepage4.png "homepage4")
 
 
-### Footer
-<a name="footer"></a>
+### Products Page
+<a name="products-page"></a>
 
-This is where users can find all the social media links. The background color is the same as the navbar to maintain visual consistency. There are aria labels in all of the links for screen readers. 
+In this page, a list of all the products is displayed, detailing the most important information such as price, rating, title. The user also has the option to sort products by price, rating and title, from either ascending or descending order. Admin users have the ability to edit and delete the product from here.   
 
-![footer image](/static/media/images/footer.png "footer")
+![products page](/media/productspage.png "productspage")
+
+### Product Detail
+<a name="product-detail"></a>
+
+The product detail consists of an image of the product to the left and all the relevant information about it on the right. This includes everything that is displayed on the product card plus sinopsys, director, subcategory, quantity to add to bag and edition (only dvd will be available, as the others will be implemented later). Admin users have the ability to edit and delete the product from here. 
+
+![products page](/media/productdetailpage.png "productspage")
+![products page2](/media/productdetailpage2.png "productspage2")
+
+If a user adds a procut to their bag, a confirmation screen will pop-up.
+
+![add to bag](/media/addtobag.png "addtobag")
+
+
+### Bag
+<a name="bag"></a>
+
+This is where users can find all the the products they have added to the bag. From here, they can review what they are purchasing, update quantities or delete what they no longer want to purchase, and finally go to checkout. There is also an option to go back to shopping.
+
+![bag page](/media/bagpage1.png "bagpage")
+![bag page2](/media/bagpage2.png "bagpage2")
 
 
 
-### Post Detail
-<a name="post-detail"></a>
+### Checkout
+<a name="checkout"></a>
 
-Whenever a uder clicks on a post, they will open the post detail page. Inside it, there is all the relevant information such as author, image, category and date, followed by the text content. At the bottom of the page, there is are upvote/downvote buttons and a comment section so users can show the way they feel about that content. Those are features that can only be accessed by registered users. 
+In the Checkout page, the user is presented with a summary of their order. If everything checks, users will need to fill in personal details, delivery and card payment. Details will be pre-filled if the user checked the save info option on a previous order. From there, they can either completer the order or go back to bag and adjust their order. 
 
-![post detail ](/static/media/images/postdetail.png "post-detail")
-![post detail2 ](/static/media/images/postdetail2.png "post-detail2")
+![checkout page](/media/checkoutpage1.png "checkoutpage")
+![checkout page2](/media/checkoutpage2.png "checkoutpage2")
+![checkout page3](/media/checkoutpage3.png "checkoutpage3")
+
+### Order Confirmation
+<a name="order-confirmation"></a>
+
+Once an order is completed, the order confirmation page will be displayed, containing all the information regarding the order. A confirmation email will also be sent to the user.
+
+![order confirmation](/media/checkoutpage1.png "orderconfirmation")
+![order confirmation2](/media/checkoutpage2.png "orderconfirmation2")
 
 
-### Authentication
-<a name="authentication"></a>
+### Product Management
+<a name="product-management"></a>
 
-This blog contains 3 authentication related pages: login, sign up and sign out. The login page includes a link to the sign up page and vice versa. That way, users can complete their desired action in an intuitive manner. 
+This area is only available to the admins. They can use this page to add a product without going to the admin. 
 
-![login image](/static/media/images/login.png "login")
-![sign up image](/static/media/images/sign-up.png "sign up")
-![sign out image](/static/media/images/sign-out.png "sign out")
+![productmanagement](/media/productmanagementpage.png "productmanagement")
+![productmanagement2](/media/productmanagementpage2.png "productmanagement2")
+![productmanagement3](/media/productmanagementpage3.png "productmanagement3")
+
+### Profile
+<a name="profile"></a>
+
+This is where the users can see and edit their private details and check their order history. 
+
+![profilepage](/media/profilepage.png "profilepage")
+
+
+### About Us 
+<a name="about-us"></a>
+
+This page includes information about Movie Night. The first part includes a lot of the SEO keywords present in the meta description for better search engine results, while the 2nd part purely explains the importance of physical media (as part of the business strategy to get people to buy from Movie Night) 
+
+![aboutuspage](/media/aboutus.png "aboutuspage")
+
+
+### Contacts 
+<a name="contacts"></a>
+
+In this page, users can find all the contacts to movie-night, as well as the link to the make a suggestion page, in case they want to contact Movie Night in the website. 
+
+![contactspage](/media/contactspage.png "contactspage")
+
+
+### Newsletter
+<a name="newsletter"></a>
+
+In this page, users can subscribe to Movie Night's newsletter so they can stay informed about all the offers, latest arrivals, etc...
+
+![newsletter page](/media/newsletterpage.png "newsletterpage")
+
+
+### Suggestion
+<a name="suggestion"></a>
+
+In this page, users can contact Movie Night and ask for any movie, TV show or Documentary they can't find on the website. They can also use the form for other queries.
+
+![suggestion page](/media/suggestionpage.png "suggestionpage")
 
 
 ### Future Features
 <a name="future-features"></a>
 
-- List of upvoted posts
-- Search by categories
-- Save posts 
+- Rate Products
+- Favourite Products
+- Movie Editions: The option to select an edition (dvd, bluray or 4k).
 
 
 ## Models
