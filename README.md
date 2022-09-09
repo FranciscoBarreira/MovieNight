@@ -16,7 +16,7 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 
 [User Experience](#user-experience)
 
-   - [User Requirements](#user-requirements)
+   
    - [User Stories](#user-stories)
 
 [Design](#design)   
@@ -29,7 +29,7 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 
 [Features](#features)   
 
-   - [Top Page](#top-page)
+   - [Home Page](#home-page)
    - [Carousel](#carousel) 
    - [Blog Posts](#blog-posts)
    - [Footer](#footer)
@@ -67,17 +67,6 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 <a name="user-experience"></a>
 
 ------
-
-
-### User Requirements 
-<a name="user-requirements"></a>
-
-- The website should be easy to navigate
-- The posts should include the category to understand the topic in discussion
-- Commenting and upvoting/downvoting should be featured
-- The website's visuals should be maintained across all pages
-- Login/signup process should be quick and intuitive
-- The website should adapt to different screen sizes on different devices
 
 
 ### User Stories
@@ -181,7 +170,7 @@ Cinzel is used for the logo as it stands out from regular fonts and gives a nice
 
 - Heroku for project deployment
 
-- Summernote for adding fields to the posts
+- Balsamiq for wireframes
 
 - Google fonts to add custom fonts to the website
 
@@ -189,23 +178,31 @@ Cinzel is used for the logo as it stands out from regular fonts and gives a nice
 
 - Bootstrap for quick HTML mobile first design
 
-- Cloudinary for online image storage
+- AWS storage
 
-- dbdiagram for the models diagram
+- drawsql for the models diagram
 
 - W3C CSS Validator to validate CSS
 
 - W3C Markup Validator to validate HTML
 
-- Codebeautify to make HTML and CSS easier to read
+- jshint for javascript validation
+
+- pep8 for python validation
+
+- crispyforms for forms
+
+- Stripe for payments
+
+- PostgreSQL as a heroku database
 
 
 ## features  
 <a name="features"></a>
 ------
 
-### Top Page
-<a name="top-page"></a>
+### Home Page
+<a name="home-page"></a>
   
 At the top of the page lies there is a navbar with a short welcome message and the Home/Signup/Login options. If the user is already logged in, the options change to Home/Sign out. Below, there is an background image with the Metagaming name and logo. 
 
