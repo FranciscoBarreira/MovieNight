@@ -603,11 +603,11 @@ This blog was designed with the help of bootstrap, which is a mobile first desig
 
 ------
 
-- No username in comments: The username was not showing in the posted comments. This was because I wrongly set comment_form.instance.username = request.user.username. The problem was fixed when i changed it to comment_form.instance.name = request.user.username.
+- The mobile header was overflowing: The problem was that I had a row within another row and that was causing erratic behaviour in which users would have had to scroll to see all the icons.
 
-- Categories bug: I could not get the full name to display in the post category, as it was not getting the human readable value. To fix this, I used the get_FOO_display.
+- Margins: Some of the content wasn't showing in most of the pages, so I had to include margins in all of them so they displayed properly.
 
-- Carousel bug: The carousel featured in the home page was presenting 4 posts when it should be limited to 3. This was fixed by using slice:2. 
+- Duplicate id in bag.html : I had divided the bag.html in small files to use as includes, but the form was generating a duplicate id, so i switched back to use that bit of code in the main template again and it fixed it. 
 
 
 
