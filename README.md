@@ -25,7 +25,13 @@ The link to the Github repository can be found [here.](https://github.com/Franci
    - [Colour Scheme](#colour-scheme)
    - [Fonts](#fonts)
 
+[Business Model](#business-model) 
+
+[Keywords](#keywords) 
+
 [Technologies Used](#technologies-used) 
+
+[Wireframes](#wireframes) 
 
 [Features](#features)   
 
@@ -41,6 +47,7 @@ The link to the Github repository can be found [here.](https://github.com/Franci
    - [Contacts](#contacts)
    - [Newsletter](#newsletter)
    - [Suggestion](#suggestion)
+   - [Facebook page](#facebookpage)
    - [Future Features](#future-features)    
 
 
@@ -156,6 +163,65 @@ The colour scheme chosen for the site can be seen below:
 
 Cinzel is used for the logo as it stands out from regular fonts and gives a nice touch to the website. The rest of the text is in Roboto, a font that improves readability.
 
+
+## Business Model
+<a name="business-model"></a>
+
+------
+
+
+Movie Night is an exclusively online B2C shop that focus on the selling of entertainment in the form of movies, tv shows and documentaries. 
+
+Obviously understanding the difficulty that physical media is in right now, we have a section in the About Us explaining why physical ownership is so important to the preservation of art. Additionally, movie buffs are quite the collectors so there is still a demand for physical media in this area. 
+
+Communication is always vital for an healthy business, which is why we encourage our users to get in touch with us and to even make suggestions of products they would like to see added to the store.
+
+Another key part of the business is getting users to sign up for Movie Night's newsletter. That way, they can be engaged regularly with brand new offers, discounts and latest information about upcoming arrivals.
+
+To make the lives of our users easier, Movie Night's website is super intuitive, easy to navigate, and its shop can be accessed from everywhere so potential customers are never far away from the products they want. It's also our obligation to provide them with accurate details such as shipping costs, and to remind them those can be free if they just spend a little bit more. 
+
+To improve our presence on the internet, a Facebook page for Movie Night exists and is updated with all relevant information(photos provided in the features section).
+
+
+
+## Keywords
+<a name="keywords"></a>
+
+------
+
+
+To improve Movie Night's online discoverability, a number of keywords were added in the metatags, including:
+
+- movies
+- tv 
+- tv-series
+- tv-shows
+- documentaries
+- dvd
+- blu-ray
+- 4k
+- comedy
+- action
+- drama
+- sci-fi
+- thriller
+- horror
+- sport
+- animation
+- musical
+- romance
+- war
+- western
+- adventure
+- shop
+- online
+- worldwide
+- shipping
+
+Long tail keywords would eventually be added for each movie (according to financial possibilities), i.e: buy Shawshank redemption online.
+
+
+
 ## Technologies Used
 <a name="technologies-used"></a>
 
@@ -201,6 +267,75 @@ Cinzel is used for the logo as it stands out from regular fonts and gives a nice
 - Stripe for payments
 
 - PostgreSQL as a heroku database
+
+
+## Wireframes
+<a name="wireframes"></a>
+
+------
+
+
+- Home page 
+
+![balsamiq home](/media/balsamiqhome.png "balsamiqhome")
+
+![balsamiq home2](/media/balsamiqhomesmall.png "balsamiqhome2")
+
+
+- Products Page
+
+![balsamiq products](/media/balsamiqproducts.png "balsamiqproducts")
+
+![balsamiq products2](/media/balsamiqproductssmall.png "balsamiqproducts2")
+
+
+- Product Detail Page
+
+![balsamiq detail](/media/balsamiqdetail.png "balsamiqdetail")
+
+![balsamiq detail2](/media/balsamiqsmalldetail.png "balsamiqdetail2")
+
+
+- Bag
+
+![balsamiq bag](/media/balsamiqbag.png "balsamiqbag")
+
+![balsamiq bag2](/media/balsamiqbagsmall.png "balsamiqbag2")
+
+
+- Checkout
+
+![balsamiq checkout](/media/balsamiqcheckout.png "checkout")
+
+![balsamiq checkout2](/media/balsamiqcheckoutsmall.png "balsamiqcheckout2")
+
+
+- About
+
+![balsamiq about](/media/balsamiqabout.png "balsamiqabout")
+
+![balsamiq about2](/media/balsamiqaboutsmall.pngg "balsamiqabout2")
+
+
+- Contacts
+
+![balsamiq contacts](/media/balsamiqcontacts.png "balsamiqcontacts")
+
+![balsamiq contacts2](/media/balsamiqcontactssmall.png "balsamiqcontacts2")
+
+
+- Suggestion
+
+![balsamiq suggestion](/media/balsamiqsuggestion.png "balsamiqsuggestion")
+
+![balsamiq suggestion2](/media/balsamiqsuggestionsmall.png "balsamiqsuggestion2")
+
+
+- Newsletter
+
+![balsamiq newsletter](/media/balsamiqnewsletter.png "balsamiqnewsletter")
+
+![balsamiq newsletter2](/media/balsamiqnewslettersmall.png "balsamiqnewsletter2")
 
 
 ## features  
@@ -313,6 +448,22 @@ In this page, users can subscribe to Movie Night's newsletter so they can stay i
 In this page, users can contact Movie Night and ask for any movie, TV show or Documentary they can't find on the website. They can also use the form for other queries.
 
 ![suggestion page](/media/suggestionpage.png "suggestionpage")
+
+
+### Facebook Page
+<a name="facebookpage"></a>
+
+As part of this project, a Facebook business page was created for Movie Night. It includes description, contacts, cover and profile picture, a shop button, business hours, amongst other relevant information. Two posts were made, the first one just promoting the store was pinned, while the other is a more casual post as you would expect from a store. 
+
+![facebook page](/media/facebook1.png "facebookpage")
+
+![facebook page2](/media/facebook2.png "facebookpage2")
+
+![facebook page3](/media/facebook3.png "facebookpage3")
+
+![facebook page4](/media/facebook4.png "facebookpage4")
+
+![facebook page5](/media/facebook5.png "facebookpage5")
 
 
 ### Future Features
