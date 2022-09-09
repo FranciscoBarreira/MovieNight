@@ -488,7 +488,7 @@ z-index: -1;
     }
 
     .logo-size {
-        font-size: 15px;
+        font-size: 15px!important;
     }
 
     #delivery-banner h4 {
