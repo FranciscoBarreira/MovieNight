@@ -53,13 +53,6 @@ The link to the Github repository can be found [here.](https://github.com/Franci
    - [Future Features](#future-features)    
 
 
-[Models](#models)   
-
-   - [Post Model](#post-model)
-   - [Comment model](#comment-model)
-   - [Diagram](#diagram)
-
-
 [Testing](#testing)   
 
    - [General Testing](#general-testing)
@@ -269,6 +262,8 @@ Long tail keywords would eventually be added for each movie (according to financ
 - Stripe for payments
 
 - PostgreSQL as a heroku database
+
+- Coolors for the colour palette
 
 
 ## Wireframes
@@ -488,27 +483,6 @@ As part of this project, a Facebook business page was created for Movie Night. I
 - Movie Editions: The option to select an edition (dvd, bluray or 4k).
 
 
-## Models
-<a name="models"></a>
-
-------
-
-### Post Model
-<a name="post-model"></a>
-
-![Post Model image](/static/media/images/post-model.png "post-model")
-![Post Model image2](/static/media/images/post-model2.png "post-model2")
-
-### Comment Model
-<a name="comment-model"></a>
-
-![Comment Model image](/static/media/images/comment-model.png "Comment-model")
-
-### Diagram
-<a name="diagram"></a>
-
-![Diagram image](/static/media/images/dbdiagram.png "Diagram")
-
 
 ## Testing
 <a name="testing"></a>
@@ -530,7 +504,7 @@ As part of this project, a Facebook business page was created for Movie Night. I
 
 - all the links in the nav and footer are working correctly (the facebook link may be removed by facebook as they tend to delete 'fake' business pages)
 
-- Users can subscribe to the newsletter and it will show on MailChimp
+- Users can subscribe to the newsletter 
 
 - Users can leave a suggestion and they will receive a confirmation email. Movie night will also get an email with the inquiry from the user. All of the process has been tested and is working correctly.
 
@@ -617,17 +591,106 @@ This blog was designed with the help of bootstrap, which is a mobile first desig
 
 ------
 
-The Metagaming repository was created on GitHub by following these steps:
+The Movie Night repository was created on Heroku by following these steps:
 
-- Select the Code Institute template
+- Login to Heroku 
 
-- Click create new repository after naming it 
+- Create a new app and choose the region (name must be unique)
 
-- Click on the green Gitpod button to create the workspace
+- Add Postgres database in resources tab
+
+- Install dj_database_url and psycopg2 in gitpod
+
+- Run the command pip3 freeze > requirements.txt to make sure Heroku knows to install them
+
+- Comment out the local database and add dj_database to imports. Go to heroku, get the database url and copy it to settings.py
+
+- dry run migrations
+
+- run all migrations
+
+- Import all the categories, subcategories and edition using the command 'python3 manage.py load data name'
+
+- Create a new Superuser
+
+- Create a Procfile so Heroku knows to create a web dyno
+
+- On Heroku, go to settings, reveal config vars and add DISABLE_COLLECTSTATIC=1
+
+- In settings.py add the name of the heroku app and add localhost 
+
+- Go to Heroku, deploy tab, select github and connect to your repository, and add automatic deployment
+
+- Deploy tha app
+
+- Copy the secretkey to the env.py file
+
+- Set debug to false
 
 
-This site was deployed to Heroku. To do so, I followed the steps in the [Django Blog cheatsheet.](https://codeinstitute.s3.amazonaws.com/fst/Django%20Blog%20Cheat%20Sheet%20v1.pdf)
 
+The AWS S3 deployment by following these steps:
+
+
+
+- Login to was.amazon.com
+
+- Search for S3 on the search bar 
+
+- Create a Bucket by naming it appropriately and choosing a region, uncheck the box that says Block Public Access and enable ACl under Bucket ownership.
+
+- Open the bucket and paste in the CORS Configuration: 
+[ { "AllowedHeaders": [ "Authorization" ], "AllowedMethods": [ "GET" ], "AllowedOrigins": [ "*" ], "ExposeHeaders": [] } ]
+
+- turn on staitc website hosting on the properties tab
+
+- In the Bucket's policy tab, click on policy generator and create a new policy. Copy it in the policy editor and before saving add /* at the end of the resource key to allow access to all Bucket resources.
+
+- Go to Access Control List tab, click on the edit option and enable List for Everyone (public access)
+
+- Search for IAM on the search bar
+
+- Click on create new group on the sidbar and call it appropriately
+
+- Click on policies on the side menu and then Create Policies
+
+- In the JSON tab select 'import managed policy' which will let us import the 'S3 Full Access Policy' that AWS has pre-built for full access to S3. But because we want to allow full access to our bucket we need to get the bucket ARN from the bucket policy page in S3 and paste it under Resource as a list.First, we will paste the ARN as it is, and then, paste again with /* at the end to add another rule for all files and folders in the bucket
+
+- After reviewing it, give the policy a name and description and click on Create Policy
+
+- Go to the group you created, click attach policy, you can then search for the policy you created and add it
+
+- Click Users to create a user in the group
+
+- Create a user, select programatic access and then click next
+
+- Select the group created and click Create User
+
+- A CSV file containing all the keys you will need to connect to django will appear for download. Save the file in a folder familiar to you, as you won't be able to download it again if you leave
+
+- On Django, go to settings.py and create an if statement in the static files section to check if there is an environment variable called USE_AWS. The if statement should include the AWS_STORAGE_BUCKET_NAME, AWS_S3_REGION_NAME, access key and secret access key
+
+- On Heroku, go to settings, reveal config vars and add the AWS keys
+
+- Set USE_AWS to TRUE and delete DISABLE_COLLECTSTATIC
+
+- Go to settings.py and set up your bucket 
+
+- Create a new file called custom_storages.py at the same level as manage.py
+
+- Import settings from django and s3boto3 storage class from django storages and create a new class called static_storages that inherits from django s3boto3
+
+- On that class, add location = settings.STATICFILES_LOCATION, which is where the static files will be stored. 
+
+- Repeat the process for the media class, and add location = settings.MEDIAFILES_LOCATION instead.
+
+- Go to settings.py and set a variable that points to the new storage classes we just created and that the location it should save static files is a folder called 'static'. Do the same for media files
+
+- Override the previously set static and media storage locations and set the URL's with our new locations. 
+
+- Deploy to Heroku
+
+- Go to the Bucket created in S3, and check for a static files folder, as it should be there. All of the static files should be in it every time the site is deployed. Next to the static folder, create a media folder, and then upload all the images you have on the media file to there. 
 
 
 
