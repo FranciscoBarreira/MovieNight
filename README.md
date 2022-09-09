@@ -33,6 +33,8 @@ The link to the Github repository can be found [here.](https://github.com/Franci
 
 [Wireframes](#wireframes) 
 
+[Data Model](#data-model) 
+
 [Features](#features)   
 
    - [Home Page](#home-page)
@@ -338,6 +340,18 @@ Long tail keywords would eventually be added for each movie (according to financ
 ![balsamiq newsletter2](/media/balsamiqnewslettersmall.png "balsamiqnewsletter2")
 
 
+## Data Model 
+<a name="data-model"></a>
+
+------
+
+
+- The data model for the website can be found below:
+
+![data model](/media/modeldiagram.png "datamodel")
+
+
+
 ## features  
 <a name="features"></a>
 ------
@@ -578,13 +592,6 @@ Every python file was passed [through](http://pep8online.com/) and came back wit
 
 
 
-
-
-
-
-CSS- No errors were shown when put through the [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ffranciscobarreira.github.io%2Fjavascript-project%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
-
-
 ### Responsiveness Testing
 <a name="responsiveness-testing"></a>
 
@@ -632,12 +639,10 @@ This site was deployed to Heroku. To do so, I followed the steps in the [Django 
 ### Media
 <a name="media"></a>
 
-All the images used in the blog were taken from other websites, including:
+All the images used in the site were taken from other websites, including:
 
-- Google images for all the images in the posts, the Metagaming page header and placeholder image.
-- Twitch.tv for the images in the recommended streamer widget.
-
-I do understand that it is better to use sites such as unsplash for images, but given the highly specific nature of the images required I decided to use google images.
+- Unsplash.com
+- IMDB for the movie covers
 
 All the icons were taken from "Font Awesome".
 
@@ -650,9 +655,7 @@ For this project, the following sources of information were used:
 
 - Django documentation for ideas on how to make ideas come true
 
-- All the post content was taken from IGN.com, Gamespot.com and Destructoid.com
-
-- The I think, therefore I do project for helping with login and pagination.
+- The Boutique ado project for helping with stripe, orders etc...
 
 
 ### Acknowledgements
