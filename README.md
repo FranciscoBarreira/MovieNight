@@ -294,35 +294,23 @@ This blog contains 3 authentication related pages: login, sign up and sign out. 
 ### General Testing
 <a name="general-testing"></a>
 
-- Nav Bar: When a user is logged in, Home and Sign Out appears on the nav bar as opposed to Home, Sign In and Sign Up.
+- Search bar working correctly and presents all the results that match either text contained on the title and in the sinopsys
 
-![non-authenticated image](/static/media/images/nav.png "non-authenticated")
-![authenticated image](/static/media/images/nav2.png "authenticated")
+- authentication working well, with users being able to login, singup and logout with no issues
 
-- Comment Section and Upvotes/Downvotes: When a user is authenticated, they can comment and upvote/downvote the post. For those who are not, the comments and upvotes/downvotes still appear, but in an non-interactive way(see image below).  
+- product detail presents all the relevant information, with the add to bag link functioning well
 
-![non-authenticated comment/upvote/downvote image](/static/media/images/comment-signout.png "non-authenticated comment/upvote/downvote")
+- updating or removing items from bag is available to users and instantly reflects on the bag
 
-- In this scenario, the user is logged in and has both upvoted and downvoted the post(for testing purposes), which is why both buttons have a red background.
+- admin users can edit and delete products from the product detail/all products page as well as from the product management page with no issues
 
-![authenticated comment/upvote/downvote image](/static/media/images/comment.png "authenticated comment/upvote/downvote")
+- all the links in the nav and footer are working correctly (the facebook link may be removed by facebook as they tend to delete 'fake' business pages)
 
-- Edit/Delete Comment: If authenticated, the user can delete or edit a comment they made. Pressing delete will permanently erase the comment, while pressing edit will take the user to the screen shown below. 
+- Users can subscribe to the newsletter and it will show on MailChimp
 
-![edit/delete image](/static/media/images/edit.png "edit/delete")
+- Users can leave a suggestion and they will receive a confirmation email. Movie night will also get an email with the inquiry from the user. All of the process has been tested and is working correctly.
 
-- Sign in message: After logging in, a successful sign in message appears for two seconds.
-
-![sucessful sign in image](/static/media/images/sign-in-message.png "successful sign in")
-
-- Sign out message: After signint out, a successful sign out message appears for two seconds.
-
-![sucessful sign out image](/static/media/images/sign-out-message.png "successful sign out")
-
-- Search bar: When a search is performed, a list of posts that match said search appear.
-
-![search image](/static/media/images/search.png "search")
-
+- All the popup messages are working correctly, including authentication success, edit/delete/add product success or fail, order confirmation and add to bag success. 
 
 
 ### Validator Testing
