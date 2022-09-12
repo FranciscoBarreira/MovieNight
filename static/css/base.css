@@ -122,6 +122,10 @@ body {
     
 }
 
+.img-height {
+    height: 200px;
+}
+
 .statement-style{
     margin-top: 40px;
     margin-bottom: 40px;
