@@ -516,52 +516,55 @@ As part of this project, a Facebook business page was created for Movie Night. I
 
 HTML
 
-[Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2F)
+- [Home Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2F)
 
-[All Products Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fproducts%2F)
+- [All Products Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fproducts%2F)
 
-[Product Detail Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fproducts%2F73%2F)
+- [Product Detail Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fproducts%2F73%2F)
 
-[Bag Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fbag%2F)
+- [Bag Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fbag%2F)
 
-[Checkout Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fproducts%2F)
+- [Checkout Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fproducts%2F)
 
-[Order Confirmation Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fcheckout%2Fcheckout_success%2FB211F86EB677449A966981E1DA2036E3)
+- [Order Confirmation Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fcheckout%2Fcheckout_success%2FB211F86EB677449A966981E1DA2036E3)
 
-[Profile Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
+- [Profile Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
 
-[Product Management](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fadd%2F)
+- [Product Management](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fproducts%2Fadd%2F)
 
-[Logout Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
+- [Logout Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F%3Fnext%3D%2Fprofile%2F)
 
-[Signup Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Fsignup%2F)
+- [Signup Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Fsignup%2F)
 
-[Login Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F)
+- [Login Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Faccounts%2Flogin%2F)
 
-[About Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fabout%2F)
+- [About Page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fabout%2F)
 
-[Contacts](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fcontacts%2F)
+- [Contacts](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fcontacts%2F)
 
-[Newsletter](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fnewsletter%2F)
+- [Newsletter](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fnewsletter%2F)
 
-[Suggestion](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fsuggestion%2F)
+- [Suggestion](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmovienight2022.herokuapp.com%2Fsuggestion%2F)
+
 
 CSS 
 
-Both CSS files had no errors on it when I ran them [through](https://jigsaw.w3.org/css-validator/)
+
+- Both CSS files had no errors on it when I ran them through the [validator](https://jigsaw.w3.org/css-validator/) 
 
 
 
 Javascript 
 
-All Javascript was put [through](https://jshint.com/) and no errors were found.
+- All Javascript was put through the [validator](https://jshint.com/) and no errors were found.
 
 
 
 
 Python
 
-Every python file was passed [through](http://pep8online.com/) and came back with no errors.
+
+- Every python file was passed through the [validator](http://pep8online.com/) and came back with no errors.
 
 
 
@@ -629,7 +632,7 @@ The Movie Night repository was created on Heroku by following these steps:
 
 
 
-The AWS S3 deployment by following these steps:
+The AWS S3 deployment followed these steps:
 
 
 
