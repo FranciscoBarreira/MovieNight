@@ -5,7 +5,7 @@ from .models import MakeSuggestion
 class SuggestionForm(forms.ModelForm):
     class Meta:
         model = MakeSuggestion
-        fields = ['email']
+        fields = ['email, subject, message']
 
         
 
