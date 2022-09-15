@@ -27,11 +27,6 @@ body {
     background-color: rgb(225, 133, 34);
 }
 
-.img-resolution {
-    height:400px;
-    width:100px;
-    object-fit: cover;
-}
 
 .text-white {
     color: #ffffff !important;
@@ -53,6 +48,10 @@ body {
 
 .bg-orange {
     background-color: rgb(225, 133, 34);
+}
+
+.shopping-margin-top {
+    margin-top: 500px;
 }
 
 .detail-margin, .checkout-margin  {
