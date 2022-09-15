@@ -24,8 +24,6 @@ def view_suggestion_page(request):
 
         # cleaned_form.save()
 
-       
-
     context = {
         'form': form,
     }
