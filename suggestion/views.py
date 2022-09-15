@@ -15,11 +15,16 @@ def view_suggestion_page(request):
 
     form = SuggestionForm(request.POST or None)
     if request.method == 'POST' and form.is_valid():
-        cleaned_form = form.cleaned_data['email']
-        cleaned_form = form.cleaned_data['subject']
-        cleaned_form = form.cleaned_data['message']
+        cleaned_email_form = form.cleaned_data['email']
+        cleaned_subject_form = form.cleaned_data['subject']
+        cleaned_message_form = form.cleaned_data['message']
+        print(cleaned_email_form)
+        print(cleaned_subject_form)
+        print(cleaned_message_form)
 
-        cleaned_form.save()
+        # cleaned_form.save()
+
+       
 
     context = {
         'form': form,
