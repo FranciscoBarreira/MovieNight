@@ -27,7 +27,11 @@ body {
     background-color: rgb(225, 133, 34);
 }
 
-
+.img-resolution {
+    height:400px;
+    width:100px;
+    object-fit: cover;
+}
 
 .text-white {
     color: #ffffff !important;
@@ -462,10 +466,7 @@ z-index: -1;
         z-index: 1030;
     }
 
-    .header-container {
-        padding-top: 164px;
-    }
-
+    
 }   
 
     /* pad the top a bit when navbar is collapsed on mobile */
