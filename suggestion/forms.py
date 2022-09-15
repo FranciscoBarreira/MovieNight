@@ -1,10 +1,10 @@
 from django import forms
-from .models import NewsletterSub
+from .models import MakeSuggestion
 
 
-class NewsletterForm(forms.ModelForm):
+class SuggestionForm(forms.ModelForm):
     class Meta:
-        model = NewsletterSub
+        model = MakeSuggestion()
         fields = ['email']
 
         def clean_email(self):
