@@ -7,4 +7,6 @@ class SuggestionForm(forms.ModelForm):
         model = MakeSuggestion
         fields = ['email']
 
+        
+
     

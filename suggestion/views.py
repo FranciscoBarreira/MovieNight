@@ -14,9 +14,10 @@ def view_suggestion_page(request):
     """ A view to return the make a suggestion page """
 
     form = SuggestionForm(request.POST or None)
-    cleaned_form = form.cleaned_data['email']
+    if request.method == 'POST' and form.is_valid():
+        cleaned_form = form.cleaned_data['email']
 
-    cleaned_form.save()
+        cleaned_form.save()
 
     context = {
         'form': form,
