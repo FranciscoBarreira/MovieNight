@@ -506,7 +506,7 @@ As part of this project, a Facebook business page was created for Movie Night. I
 
 - Users can subscribe to the newsletter 
 
-- Users can leave a suggestion and they will receive a confirmation email. Movie night will also get an email with the inquiry from the user. All of the process has been tested and is working correctly.
+- Users can leave a suggestion and they will receive a confirmation message. 
 
 - All the popup messages are working correctly, including authentication success, edit/delete/add product success or fail, order confirmation and add to bag success. 
 
